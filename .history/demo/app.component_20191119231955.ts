@@ -620,7 +620,6 @@ export class AppComponent implements OnInit {
     return `${c.label}<br/><small class="number-card-label">This week</small>`;
   }
 
-   //   Equation Function 
   generatePlotData() {
     if (!this.mathFunction) {
       return [];
@@ -642,7 +641,7 @@ export class AppComponent implements OnInit {
         series
       }
     ];
-  } 
+  }
 
   getFunction(text = this.mathText) {
     try {
@@ -653,7 +652,7 @@ export class AppComponent implements OnInit {
     } catch (err) {
       return null;
     }
-  }// Equation Function
+  }
 
   treemapProcess(sumBy = this.sumBy) {
     this.sumBy = sumBy;
